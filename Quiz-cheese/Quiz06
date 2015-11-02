@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+ 
+long power( long a, long b)
+{
+  long result = 1;
+ 
+  for (int i=1; i<=b ; i++){
+    result=(result*a);
+  }
+  return result;
+}
+ 
+long casa, perro;
+ 
+int main()
+{
+  cout<< "Ingrese un número que será la base"<<endl;
+  cin>> casa; cout<< endl;
+  cout<< "Ingrese un número que será el exponente"<<endl;
+  cin>> perro; cout<< endl;
+  cout << "El resultado es: "<< endl;
+  cout<<power(casa,perro);
+  return 0;
+ 
+}
